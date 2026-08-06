@@ -1,3 +1,9 @@
+## All blobs from this list, unless pinned and noted as otherwise,
+## are from onn/jarvis/SNA:14/URO4.260304.011.B1/15051976:user/release-keys.
+
+## Graphics
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.amlogic.so
+
 ## Wifi - installed under the firmware_class search path (/vendor/lib/firmware/)
 ## set by init.amlogic.media.rc, so dhd's firmware_path=/wifi/ resolves.
 # from lineage 22.2 kernel 4.9 modules
