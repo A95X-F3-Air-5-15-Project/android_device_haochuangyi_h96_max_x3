@@ -19,7 +19,7 @@ vendor.media.support.dolbyvision=false
 persist.vendor.amlogic.remotecfg.path=/vendor/etc/remote
 
 ## SOC
-ro.soc.model=AMLS905D3
+ro.soc.model=AMLS905X3
 
 ## Wi-Fi
 vendor.wifi_name=bcm
