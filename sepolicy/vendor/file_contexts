@@ -1,0 +1,2 @@
+/dev/ree2aocpu    u:object_r:ree2aocpu_device:s0
+/dev/wifi_power    u:object_r:wifi_power_device:s0

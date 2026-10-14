@@ -40,6 +40,9 @@ TARGET_RECOVERY_UI_LIB := librecovery_ui_h96maxx3
 # Ensure the module is built alongside recovery
 TARGET_RECOVERY_DEVICE_MODULES += librecovery_ui_h96maxx3
 
+## SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 ## Wi-Fi
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 BOARD_WLAN_DEVICE := bcmdhd

@@ -12,6 +12,12 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,brcm_libbt,bdroid_buildcfg_include_dir,$(LOCAL_PATH)/bluetooth/include)
 $(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_h96maxx3.txt)
 
+# Patch files of the stock firmware (vendor/etc/bluetooth), one per Ampak
+# module; libbt-vendor picks the one named after the controller.
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bluetooth/bt_vendor_h96maxx3.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_vendor_h96maxx3.conf \
+    $(call find-copy-subdir-files,*.hcd,$(LOCAL_PATH)/proprietary/vendor/firmware/brcm,$(TARGET_COPY_OUT_VENDOR)/firmware/brcm)
+
 ## Factory
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer

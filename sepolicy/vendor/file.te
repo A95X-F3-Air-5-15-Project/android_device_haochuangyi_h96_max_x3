@@ -1,0 +1,3 @@
+type wifi_power_device, dev_type;
+type ree2aocpu_device, dev_type;
+type sysfs_bt_power, fs_type, sysfs_type;

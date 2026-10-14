@@ -1,0 +1,1 @@
+genfscon sysfs /module/amlogic_wireless/parameters/btpower_evt    u:object_r:sysfs_bt_power:s0
