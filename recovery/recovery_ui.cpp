@@ -2,9 +2,9 @@
 #include <recovery_ui/screen_ui.h>
 
 // 1. Custom UI Class to intercept hardware states
-class Kvim3lRecoveryUI : public ScreenRecoveryUI {
+class H96maxx3RecoveryUI : public ScreenRecoveryUI {
   public:
-    Kvim3lRecoveryUI() {}
+    H96maxx3RecoveryUI() {}
 
     // CheckKey is evaluated by the input thread before keys enter the queue
     KeyAction CheckKey(int key, bool is_long_press) override {
@@ -21,9 +21,9 @@ class Kvim3lRecoveryUI : public ScreenRecoveryUI {
 };
 
 // 2. Custom Device Class to map the queue to menu actions
-class Kvim3lRecoveryDevice : public Device {
+class H96maxx3RecoveryDevice : public Device {
   public:
-    Kvim3lRecoveryDevice(ScreenRecoveryUI* ui) : Device(ui) {}
+    H96maxx3RecoveryDevice(ScreenRecoveryUI* ui) : Device(ui) {}
 
     int HandleMenuKey(int key, bool visible) override {
         if (visible) {
@@ -44,5 +44,5 @@ class Kvim3lRecoveryDevice : public Device {
 // 3. Entry point
 Device* make_device() {
     // Pass our custom UI class into our custom Device class
-    return new Kvim3lRecoveryDevice(new Kvim3lRecoveryUI());
+    return new H96maxx3RecoveryDevice(new H96maxx3RecoveryUI());
 }

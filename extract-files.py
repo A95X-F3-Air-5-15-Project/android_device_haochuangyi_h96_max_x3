@@ -22,8 +22,8 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'kvim3l',
-    'khadas',
+    'h96maxx3',
+    'haochuangyi',
     blob_fixups=blob_fixups,
 )
 

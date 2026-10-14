@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-ifneq ($(filter kvim3l kvim3l_car kvim3l_tab,$(TARGET_DEVICE)),)
+ifneq ($(filter h96maxx3,$(TARGET_DEVICE)),)
 
-LOCAL_PATH := device/khadas/kvim3l
-FACTORY_PATH := device/khadas/kvim3l/factory
+LOCAL_PATH := device/haochuangyi/h96maxx3
+FACTORY_PATH := device/haochuangyi/h96maxx3/factory
 
 RADIO_FILES := $(wildcard $(FACTORY_PATH)/bootfiles/*)
 $(foreach f, $(notdir $(RADIO_FILES)), \

@@ -5,7 +5,7 @@
 #
 
 ## Bluetooth
-bluetooth.device.default_name=VIM 3L
+bluetooth.device.default_name=H96 Max X3
 bluetooth.profile.hfp.ag.enabled=false
 bluetooth.profile.opp.enabled=false
 bluetooth.profile.pbap.server.enabled=false

@@ -1,6 +1,6 @@
 cc_library_static {
-    name: "librecovery_ui_kvim3l",
-    owner: "khadas",
+    name: "librecovery_ui_h96maxx3",
+    owner: "haochuangyi",
     srcs: [
         "recovery_ui.cpp",
     ],

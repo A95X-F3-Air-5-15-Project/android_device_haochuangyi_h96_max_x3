@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_kvim3l.mk
+    $(LOCAL_DIR)/lineage_h96maxx3.mk
