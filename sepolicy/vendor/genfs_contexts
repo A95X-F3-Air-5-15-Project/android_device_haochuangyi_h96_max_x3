@@ -1,1 +1,5 @@
 genfscon sysfs /module/amlogic_wireless/parameters/btpower_evt    u:object_r:sysfs_bt_power:s0
+
+# Wakeup source of the board, read by system_suspend: dhd enables wakeup on
+# SDIO function 2 of the Wi-Fi module
+genfscon sysfs /devices/platform/ffe03000.sdio/mmc_host/mmc2/mmc2:0001/mmc2:0001:2/wakeup    u:object_r:sysfs_wakeup:s0
