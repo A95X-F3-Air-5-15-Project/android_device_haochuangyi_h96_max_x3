@@ -16,6 +16,11 @@ $(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_h96maxx3
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer
 
+## Graphics (Mali)
+PRODUCT_PACKAGES += \
+    libGLES_mali \
+    vendor_lib_hw_vulkan_amlogic_so
+
 ## Init-Files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
@@ -35,6 +40,3 @@ PRODUCT_SOONG_NAMESPACES += \
 
 ## Inherit from the common tree product makefile
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
-
-## Inherit from the proprietary files makefile
-$(call inherit-product, vendor/haochuangyi/h96maxx3/h96maxx3-vendor.mk)
