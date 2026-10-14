@@ -119,3 +119,14 @@ key 136   MEDIA_AUDIO_TRACK
 
 #special for deadpool
 key 218      PAIRING
+
+# Keys the stock H96 Max X3 layout maps and the VIM3L one leaves out. OK of
+# the stock remote.tab1 remote sends KEY_ENTER (28) and its delete key
+# KEY_BACKSPACE (14); 168/208 (rewind/fast forward) and 87/88 (red/blue)
+# come from the other stock remote maps.
+key 14    DEL
+key 28    DPAD_CENTER WAKE
+key 87    PROG_RED
+key 88    PROG_BLUE
+key 168   MEDIA_REWIND
+key 208   MEDIA_FAST_FORWARD

@@ -42,6 +42,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/Vendor_0001_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0001_Product_0001.kl
 
+## Remote (IR)
+# The stock remote tables, which g12-common loads with remotecfg1-3 from the
+# directory in persist.vendor.amlogic.remotecfg.path, padded for the 5.15 IR
+# driver.
+PRODUCT_COPY_FILES += \
+    $(foreach f,remote.cfg remote.tab1 remote.tab2 remote.tab3, \
+        $(LOCAL_PATH)/remote/$(f):$(TARGET_COPY_OUT_VENDOR)/etc/remote/$(f))
+
 ## OpenVFD
 # Lineage keeps Soong out of kernel/platform; OpenVFDService lives next to the
 # driver there, as on other OpenVFD boxes.
