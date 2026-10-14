@@ -25,6 +25,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
 
+## Wi-Fi
+# Ampak firmware set of the stock H96 Max X3 firmware (wifi/buildin). The box
+# ships with different modules; dhd picks fw_<chip>, nvram_<module> and
+# config_<chip> from /vendor/lib/firmware/wifi by the chip it finds.
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor/firmware/wifi,$(TARGET_COPY_OUT_VENDOR)/lib/firmware/wifi)
+
 ## Keylayout (IR)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/Vendor_0001_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0001_Product_0001.kl
