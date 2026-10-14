@@ -1,4 +1,4 @@
-[  
+[
   {
     "repository": "android_device_amlogic_g12-common",
     "target_path": "device/amlogic/g12-common"
@@ -6,5 +6,9 @@
   {
     "repository": "android_kernel_haochuangyi_h96maxx3-build",
     "target_path": "kernel/platform/kernel-5.15/vendor/haochuangyi/h96maxx3-build"
+  },
+  {
+    "repository": "MrArtemSid/android_hardware_amlogic_kernel-modules_openvfd",
+    "target_path": "kernel/platform/kernel-5.15/vendor/amlogic/openvfd"
   }
 ]
