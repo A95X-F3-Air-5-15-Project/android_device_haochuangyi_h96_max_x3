@@ -4,7 +4,7 @@
     "target_path": "device/amlogic/g12-common"
   },
   {
-    "repository": "android_kernel_haochuangyi_h96maxx3-build",
+    "repository": "A95X-F3-Air-5-15-Project/android_kernel_haochuangyi_h96maxx3-build",
     "target_path": "kernel/platform/kernel-5.15/vendor/haochuangyi/h96maxx3-build"
   },
   {
